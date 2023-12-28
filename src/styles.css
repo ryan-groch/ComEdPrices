@@ -24,11 +24,6 @@
   box-sizing: border-box;
 }
 
-html {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-}
-
 .app {
   padding: 0 0.5rem;
 }
@@ -74,7 +69,7 @@ html {
 }
 
 @media (prefers-color-scheme: light) {
-  html {
+  :root {
     color: #213547;
     background-color: #ffffff;
   }
