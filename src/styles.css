@@ -1,0 +1,113 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  --header-font-size: 1.25rem;
+  --std-font-size: 1rem;
+  --footer-font-size: 0.9rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.app {
+  padding: 0 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0.5rem;
+}
+
+.header .header-item {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-item button {
+  font-size: var(--header-font-size);
+  padding: 0.25rem;
+}
+
+.header .header-item h1 {
+  font-size: var(--header-font-size);
+  font-weight: 500;
+}
+
+.table {
+  width: 100%;
+  font-size: var(--std-font-size);
+  padding-bottom: 0.5rem;
+}
+
+.col-1 {
+  width: 75%;
+}
+
+.col-2 {
+  text-align: end;
+}
+
+.updated {
+  font-size: var(--footer-font-size);
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 22.5rem) and (min-height: 17rem) {
+  :root {
+    --header-font-size: 1.65rem;
+    --std-font-size: 1.5rem;
+    --footer-font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 30rem) and (min-height: 21.5rem) {
+  :root {
+    --header-font-size: 2.15rem;
+    --std-font-size: 2rem;
+    --footer-font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 38rem) and (min-height: 26.5rem) {
+  :root {
+    --header-font-size: 2.65rem;
+    --std-font-size: 2.5rem;
+    --footer-font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 47rem) and (min-height: 30rem) {
+  :root {
+    --header-font-size: 3.4rem;
+    --std-font-size: 3.25rem;
+    --footer-font-size: 2.75rem;
+  }
+}

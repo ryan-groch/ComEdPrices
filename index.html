@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComEd Prices</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="header-item">
+          <h1>Current ComEd Prices</h1>
+        </div>
+        <div class="header-item">
+          <button id="btn">↻</button>
+        </div>
+      </header>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td class="col-1">Last 5 Minutes:</td>
+            <td class="col-2" id="five-minutes">??</td>
+          </tr>
+          <tr>
+            <td class="col-1">Current Hour Average:</td>
+            <td class="col-2" id="curr-hour">??</td>
+          </tr>
+          <tr>
+            <td class="col-1">Previous Hour Average:</td>
+            <td class="col-2" id="prev-hour">??</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="updated">Price Timestamp: <span id="timestamped">??</span></p>
+      <p class="updated">Last Checked: <span id="fetched">??</span></p>
+    </main>
+  </body>
+</html>
